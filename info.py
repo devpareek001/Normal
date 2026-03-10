@@ -14,8 +14,8 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8000")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '31312144'))
+API_HASH = environ.get('API_HASH', 'd71f76b181c759c458b4ba684145532a')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 # Bot settings
@@ -28,8 +28,8 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/ea40f1b53dd3b6315
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/2a888a370f479f4338f7c.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8385589427').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003687198050').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -43,7 +43,7 @@ SUPPORT_CHAT_ID = 0
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Demo22:Demo22@cluster0.pj7etfj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "PIRO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 
@@ -51,16 +51,16 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '0'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+JFfnvMIjm2g0YmU1')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003791914148'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+_eO8A6ttPWJlYzU9')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '🗃️ <b>{file_caption}</b>\n\n**╭ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐 \n├ ▸ [@GRANDCINEMAS](https://t.me/grandcinemas)\n╰ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐**')
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", '🗃️ <b>{file_caption}</b>\n\n**╭ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐 \n├ ▸ [@GRANDCINEMAS](https://t.me/grandcinemas)\n╰ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐**')
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", '🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10  \n🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres} \n\n🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 [GRANDCINEMAS](https://t.me/grandcinemas)')
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '🗃️ <b>{file_caption}</b>\n\n**╭ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐 \n├ ▸ [@MOVIE_BACKUP](https://t.me/MoviesEmpire_Backup)\n╰ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐**')
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", '🗃️ <b>{file_caption}</b>\n\n**╭ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐 \n├ ▸ [@MOVIE_BACKUP](https://t.me/MoviesEmpire_Backup)\n╰ ▸ 𝖩𝗈𝗂𝗇 𝖶𝗂𝗍𝗁 𝖴𝗌 𝖭𝗈𝗐**')
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", '🏷 𝖳𝗂𝗍𝗅𝖾: <a href={url}>{title}</a> \n🔮 𝖸𝖾𝖺𝗋: {year} \n⭐️ 𝖱𝖺𝗍𝗂𝗇𝗀𝗌: {rating}/ 10  \n🎭 𝖦𝖾𝗇𝖾𝗋𝗌: {genres} \n\n🎊 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖡𝗒 [MOVIE_BACKUP](https://t.me/MoviesEmpire_Backup)')
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
