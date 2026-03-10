@@ -41,7 +41,7 @@ reqst_channel = environ.get('REQST_CHANNEL_ID')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = -1005081391767
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
-
+AUTH_CHANNEL = -1002189976586
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Demo22:Demo22@cluster0.pj7etfj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "PIRO")
