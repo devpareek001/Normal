@@ -23,7 +23,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 # Bot images & videos
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/35cbee26b7ab58a5cbcaf.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/1061a330f8a529a6ae32e-9330d811e12def6b09.jpg https://graph.org/file/10b981d5000c719510648-e0fec3ee97981b9c26.jpg https://graph.org/file/6fab626ca01850aea99a0-41018a014755af55d1.jpg')).split()
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/ea40f1b53dd3b6315c130.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/2a888a370f479f4338f7c.jpg")
 
@@ -39,7 +39,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID')
 reqst_channel = environ.get('REQST_CHANNEL_ID')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-SUPPORT_CHAT_ID = 0
+SUPPORT_CHAT_ID = -1005081391767
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
