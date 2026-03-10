@@ -23,7 +23,7 @@ async def series(_, message):
 
 @Client.on_message(filters.command("tutorial", CMD))
 async def tutorial(_, message):
-    await message.reply_text("𝖢𝗁𝖾𝖼𝗄𝗈𝗎𝗍 @grandcinemas 𝖥𝗈𝗋 𝖳𝗎𝗍𝗈𝗋𝗂𝖺𝗅𝗌 😎")
+    await message.reply_text("𝖢𝗁𝖾𝖼𝗄𝗈𝗎𝗍 @MoviesEmpire_Backup 𝖥𝗈𝗋 𝖳𝗎𝗍𝗈𝗋𝗂𝖺𝗅𝗌 😎")
 
 @Client.on_message(filters.command("ping", CMD))
 async def ping(_, message):
@@ -32,3 +32,4 @@ async def ping(_, message):
     end_t = time.time()
     time_taken_s = (end_t - start_t) * 1000
     await rm.edit(f"𝖯𝗂𝗇𝗀!\n{time_taken_s:.3f} ms")
+
